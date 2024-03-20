@@ -3,31 +3,57 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --dark: #181818;
+  --dark-light: #1e1e1e;
+  --white: #ffffff;
+  --red-light: #dc3b5a;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--white);
+  background: var(--dark);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  @font-face {
+    font-family: 'RGrotCB';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/RightGrotesk-CompactBlack.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'MSMono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/MessinaSansMono-Regular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'MSMono';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/MessinaSansMono-SemiBold.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'BiroScriptUSPB';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/BiroScriptUSPlus-Bold.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'BiroScriptPB';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/BiroScriptPlus-Bold.woff2) format('woff2');
   }
 }
