@@ -47,15 +47,15 @@ leading-[1.17] xl:leading-[1.21] md:leading-[1.17] uppercase"
           <span className="px-6 text-xl">
             <Cross className="w-[36px] h-[36px] mt-[5px] xl:mt-[10px]" />
           </span>{' '}
-          Destroy stereotypes{' '}
+          Destroy&nbsp;stereotypes{' '}
           <span className="px-6 text-xl">
             <Cross className="w-[36px] h-[36px] mt-[5px] xl:mt-[10px]" />
           </span>{' '}
-          HAVE NO LIMITS
+          HAVE&nbsp;NO&nbsp;LIMITS
           <span className="px-6 text-xl">
             <Cross className="w-[36px] h-[36px] mt-[5px] xl:mt-[10px]" />
           </span>{' '}
-          Break rules{' '}
+          Break&nbsp;rules{' '}
           <span className="px-6 text-xl">
             <Cross className="w-[36px] h-[36px] mt-[5px] xl:mt-[10px]" />
           </span>
