@@ -35,7 +35,7 @@ export default function Mint() {
   useEffect(() => {
     const word = Object.keys(errors).length !== 0 ? 'ERROR' : 'MINT';
     setTextBtn(word);
-  }, [errors?.address, errors?.discord]);
+  }, [errors, errors?.address, errors?.discord]);
 
   return (
     <section className="container block-distance">
