@@ -1,0 +1,6 @@
+.faq:hover p {
+  color: var(--white);
+}
+.faq:hover h4 {
+  color: var(--red-light);
+}

@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
+
 import './globals.css';
+
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Ape NFT',
@@ -13,7 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="font-['RGrotCB']">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

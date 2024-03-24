@@ -5,16 +5,13 @@
 :root {
   --dark: #181818;
   --dark-light: #1e1e1e;
+  --dark-light-10: #1e1e1e1a;
   --white: #ffffff;
+  --white-light-10: #ffffff1a;
   --red-light: #dc3b5a;
 }
 
 @media (prefers-color-scheme: dark) {
-}
-
-body {
-  color: var(--white);
-  background: var(--dark);
 }
 
 @layer base {
@@ -42,18 +39,49 @@ body {
   }
 
   @font-face {
-    font-family: 'BiroScriptUSPB';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(../fonts/BiroScriptUSPlus-Bold.woff2) format('woff2');
-  }
-
-  @font-face {
     font-family: 'BiroScriptPB';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url(../fonts/BiroScriptPlus-Bold.woff2) format('woff2');
+  }
+
+  body {
+    color: var(--white);
+    background: var(--dark);
+  }
+
+  @layer components {
+    .white-style {
+      @apply text-white hover:text-red-light;
+    }
+    .black-style {
+      @apply text-black hover:text-white;
+    }
+
+    .block-distance {
+      @apply pt-[60px] md:pt-[80px] xl:pt-[120px];
+    }
+
+    .title {
+      @apply mb-6 md:mb-10 xl:mb-20 text-[44px] md:text-[80px] xl:text-[160px] leading-[0.91] md:leading-none text-center uppercase;
+    }
+
+    /** HERO **/
+    .word-spacing {
+      word-spacing: 161px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      .word-spacing {
+        word-spacing: 250px;
+      }
+    }
+  }
+}
+
+@layer utilities {
+  .common-transition {
+    @apply transition duration-[350ms] ease-custom;
   }
 }
