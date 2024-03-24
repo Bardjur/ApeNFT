@@ -44,7 +44,7 @@ leading-[1.17] xl:leading-[1.21] md:leading-[1.17] uppercase"
       </div>
 
       <div className="absolute left-0 bottom-0 w-full overflow-hidden bg-red-light">
-        <p className="inline-flex items-center pt-[5px] xl:pt-[6px] pb-[11px] xl:pb-4 text-nowrap  text-4xl xl:text-[64px] leading-none uppercase bg-red-light animate-scroll">
+        <p className="inline-flex items-center pt-[5px] xl:pt-[6px] pb-[11px] xl:pb-4 text-nowrap flex-nowrap text-4xl xl:text-[64px] leading-none uppercase bg-red-light animate-scroll">
           <span className="px-6 text-xl">✖</span> Destroy stereotypes{' '}
           <span className="px-6 text-xl">✖</span> HAVE NO LIMITS
           <span className="px-6 text-xl">✖</span> Break rules{' '}
